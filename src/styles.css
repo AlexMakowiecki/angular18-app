@@ -48,10 +48,14 @@ a{
 }
 
 #root{
-  min-height: 100vh;
   display:flex;
   flex-direction:column;
 }
+
+#root > *:not(header, footer, nav){
+  flex: 1;
+}
+
 
 button{
     font-family: inherit;
